@@ -1,0 +1,2 @@
+# ledger_ai_code
+使用trae完成大部分代码编写的账本app
