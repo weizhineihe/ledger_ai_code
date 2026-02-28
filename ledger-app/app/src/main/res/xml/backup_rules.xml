@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    传统备份规则配置文件 (API 30 及以下版本使用)
+    定义哪些文件应该包含在自动备份中，哪些应该排除
+-->
+<full-backup-content>
+    <!-- 包含所有 SharedPreferences -->
+    <include domain="sharedpref" path="."/>
+    
+    <!-- 包含数据库文件 -->
+    <include domain="database" path="."/>
+    
+    <!-- 包含应用内部存储的文件 -->
+    <include domain="file" path="."/>
+    
+    <!-- 排除敏感数据 -->
+    <exclude domain="file" path="sensitive_data/"/>
+    
+    <!-- 排除临时文件和缓存 -->
+    <exclude domain="file" path="cache/"/>
+    <exclude domain="file" path="temp/"/>
+    
+    <!-- 排除安全相关的 SharedPreferences -->
+    <exclude domain="sharedpref" path="security_prefs.xml"/>
+</full-backup-content>

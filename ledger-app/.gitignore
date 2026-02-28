@@ -1,0 +1,44 @@
+# 忽略编译输出目录
+target/
+bin/
+
+# 忽略 IDE 相关文件
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 忽略日志文件
+*.log
+
+# 忽略系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略临时文件
+*.tmp
+*.temp
+
+# 忽略 Maven 本地仓库（可选）
+/.m2/repository/
+
+# 忽略 Node.js 相关文件（如果项目涉及前端）
+node_modules/
+npm-debug.log*
+
+# 忽略构建工具生成的文件
+/build/
+/dist/
+
+# 忽略敏感配置文件（如数据库连接信息）
+config/application.properties
+config/*.secret
+
+# 忽略 coverage 报告
+coverage/
+
+# 忽略 Gradle 构建缓存
+.gradle/
+
+# 忽略各个模块下的build文件夹
+/*/build
